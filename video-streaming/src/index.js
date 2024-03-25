@@ -12,7 +12,9 @@ if (!process.env.PORT) {
 const app = express();
 
 app.get("/video", async (req, res) => {
-  console.log(`Request received to {VIDEO_STORAGE_HOST}:${VIDEO_STORAGE_PORT}`);
+  console.log(
+    `Request forwarded to ${VIDEO_STORAGE_HOST}:${VIDEO_STORAGE_PORT}`
+  );
   const forwardRequest = http.request(
     {
       host: VIDEO_STORAGE_HOST,

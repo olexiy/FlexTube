@@ -11,7 +11,7 @@ services:
     environment:
       - PORT=80
       - ACCOUNT_KEY_ID=${ACCOUNT_KEY_ID}
-      - ACCOUNT_KEY_SECRET=${ACCOUNT_KEY_SECRET}
+      - ACCOUNT_SECRET=${ACCOUNT_SECRET}
     restart: "no"
 
   video-streaming:

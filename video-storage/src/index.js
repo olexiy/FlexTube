@@ -6,7 +6,6 @@ const ACCOUNT_KEY_ID = process.env.ACCOUNT_KEY_ID;
 const ACCOUNT_SECRET = process.env.ACCOUNT_SECRET;
 const REGION = process.env.REGION || "eu-central-1";
 
-
 if (!process.env.ACCOUNT_KEY_ID || !process.env.ACCOUNT_SECRET) {
   throw new Error("AWS credentials environment variable not set");
 }
@@ -46,5 +45,5 @@ app.get("/files/:key", async (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-  console.log("Server is running on port 3000");
+  console.log(`Video Storage Server is running on port ${PORT}`);
 });

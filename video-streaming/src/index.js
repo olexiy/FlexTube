@@ -12,7 +12,7 @@ if (!process.env.PORT) {
 const app = express();
 
 app.get("/video", async (req, res) => {
-
+  console.log(`Request received to {VIDEO_STORAGE_HOST}:${VIDEO_STORAGE_PORT}`);
   const forwardRequest = http.request(
     {
       host: VIDEO_STORAGE_HOST,
@@ -31,5 +31,5 @@ app.get("/video", async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
+  console.log(`Video Streaming Server is running on port ${PORT}`);
 });

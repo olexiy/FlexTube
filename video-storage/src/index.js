@@ -25,6 +25,11 @@ const app = express();
 app.get("/files/:key", async (req, res) => {
   const { key } = req.params;
 
+  // console.log(`Àccess key: ${ACCOUNT_KEY_ID}`);
+  // console.log(`Secret key: ${ACCOUNT_SECRET}`);
+  // console.log(`Region: ${REGION}`);
+  // console.log(`Key: ${key}`);
+
   // Specify the S3 bucket and key of the file
   const command = new GetObjectCommand({
     Bucket: "video-straming-microservice-storage-1232ghdfgjhjtzhgbcbvcdbg6",

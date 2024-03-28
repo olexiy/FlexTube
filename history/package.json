@@ -1,10 +1,11 @@
 {
-  "name": "video",
+  "name": "history",
   "version": "1.0.0",
-  "main": "src/index.js",
+  "description": "",
+  "main": "./src/index.js",
   "scripts": {
-    "start": "node src/index.js",
-    "start:dev": "nodemon src/index.js"
+    "start": "node ./src/index.js",
+    "start:dev": "nodemon ./src/index.js"
   },
   "keywords": [],
   "author": "",
@@ -17,6 +18,5 @@
   },
   "devDependencies": {
     "nodemon": "^3.1.0"
-  },
-  "description": ""
+  }
 }
